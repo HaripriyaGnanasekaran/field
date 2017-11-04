@@ -1,0 +1,15 @@
+Output.cpp:if the boolean firstwrite is set, the file is created, else, it is appended to
+SF_Branched1stO.cpp:		" SF_Branched1stO::SF_Branched1stO: Programming error, trying to create a branched polymer for molecule '" +
+SF_Branched1stO.cpp:	data object from DensityPartQ, while for a copolymer it creates a new vector
+SF_Branched1stO.cpp:	For each single link we create a Matrix Gzs_link that is internally represented as an
+SF_Copol1stO.cpp:		"Programming error, trying to create a copolymer for molecule '" +
+SF_Copol2ndO.cpp:		"Programming error, trying to create a copolymer for molecule '" + 
+SF_Copol2ndO_stiff_range.cpp:		"Programming error, trying to create a copolymer for molecule '" + 
+SF_Dend1stO.cpp:		"Programming error, trying to create a dendrimer for molecule '" + 
+SF_Molecule.cpp:	// if there is no Phi so far, create Q's of Dim(1,1):
+SF_Molecule.cpp:	// else create Q's of Dim(1,numPhi++)
+SF_MolSegment.cpp:		Message(fatal,MyInput,"Cannot create MolSegment '" +
+SF_Monomer1stO.cpp:		"Programming error, trying to create a monomer for molecule '" +
+SF_Monomer2ndO.cpp:		"Programming error, trying to create a monomer for molecule '" +
+SF_SegmentList.cpp:    // create segmentParam.
+SF_SegmentList.cpp:	// create segments and dump in SegmentQ

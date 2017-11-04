@@ -1,0 +1,6 @@
+./sfbox version 2.1.0.0 date: 2015-7913
+Checking inputfile ads.in for errors
+
+Fatal error reading inputfile 'ads.in'
+file 'ads.in' can't be opened or the file may not exist in this directory
+Aborting...

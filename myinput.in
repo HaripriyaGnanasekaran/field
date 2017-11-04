@@ -1,0 +1,52 @@
+lat : flat : gradients : 3
+lat : flat : n_layers_x : 49
+lat : flat : n_layers_y : 49
+lat : flat : n_layers_z : 100
+lat : flat : geometry : flat
+
+mon : X : freedom : pinned
+mon : X : pinned_range : 25,25,25;25,25,26
+mon : G : freedom : pinned
+mon : G : pinned_range : =(25,25,70)
+mon : G : spot_size : 2
+mon : G : MC : true
+mon : G : move : z
+mon : A : freedom : free
+mon : S : freedom : free
+mon : S500 : freedom : pinned
+mon : S500 : pinned_range : =(25,25,40)
+mon : S500 : spot_size : 2
+mon : S500 : MC : true
+mon : S500 : move : xyz
+mon : ub : freedom : frozen
+mon : ub : frozen_range : 1,1,100;49,49,100
+
+sys : frans : num_of_moves : 30
+sys : frans : move_strategy : fixed
+sys : frans : d_pos_max : 2
+
+mol : pol : composition : (X)1(A)498(S500)1(A)499(G)1
+mol : pol : freedom : restricted
+mol : pol : theta : 1000
+
+mol : sol : composition : (S)1
+mol : sol : freedom : solvent
+
+newton : isaac : method : LBFGS
+newton : isaac : linesearch : Scheutjens
+newton : isaac : m : 4
+//newton : isaac : deltamax : 0:1
+newton : isaac : initial_guess : none
+
+output : filename.kal : type : kal
+output : filename.kal : template : kal.tmp
+//output : filename.kal : append : true
+
+sys : frans : Probe_molecule : pol
+
+sys : frans : MC : true
+sys : frans : extra_output : MC
+sys : frans : MC_method : Metropolis
+sys : frans : MCS : 1000
+
+start

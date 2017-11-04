@@ -1,0 +1,7 @@
+sys : * : mcs : 1
+mol : Pol : rho* : 1
+sys : * : free energy : 1
+sys : * : accuracy : 1
+newton : * : error occurred : false
+newton : * : iterations : 127
+newton : * : accuracy : 6.27333986611e-013

@@ -1,0 +1,83 @@
+Input.cpp:Input::CheckFirstArguments(Array<Text> t1) const {
+Input.cpp:Array <Text>
+Input.cpp:	Array<Text> names;
+Input.cpp:Array <Text>
+Input.cpp:	Array<Text> names;
+Input.cpp:Input::CheckParameterNames(Text comp, Text name, Array<Text> choices) const {
+Input.cpp:Input::GetChoice(Text comp, Text name, Text param, Array<Text> choice) const {
+Input.cpp:Input::GetChoice(Text comp, Text name, Text param, Array<Text> choice, int def) const {
+Lat1DCylinder.cpp:	Array<Text> param(1,15);
+Lat1DCylinder.cpp:	Array<Text> bounds(1,5);
+Lat1DFlat.cpp:		Array<Text> param(1,13);
+Lat1DFlat.cpp:	Array<Text> bounds(1,5);
+Lat1DFlat.cpp:	Array<Text> latTypes(1,2);
+Lat1DFlat.cpp:	Array<Text> bounds(1,5);
+Lat1DFlat.cpp:Array<Text>
+Lat1DFlat.cpp:Lat1DFlat::CheckBoundaries(Array<LatticeRange*> LatRanges) const {
+Lat1DSphere.cpp:	Array<Text> bounds(1,5);
+Lat2DCylinder.cpp:	Array<Text> param(1,18);
+Lat2DCylinder.cpp:	Array<Text> bounds(1,5);
+Lat2DFlat.cpp:	Array<Text> bounds(1,5);
+Lat2DFlat.cpp:		Array<Text> lattype(1,2);
+Lat2DFlat.cpp:	Array<Text> param(1,16);
+Lat2DFlat.cpp:	Array<Text> bounds(1,5);
+Lat2DFlat.cpp:Array<Text>
+Lat2DFlat.cpp:Lat2DFlat::CheckBoundaries(Array<LatticeRange*> LatRanges) const {
+Lat3D.cpp:	Array<Text> bounds(1,4);
+Lat3D.cpp:		Array<Text> lattype(1,4);
+Lat3D.cpp:	Array<Text> param(1,num_params);
+Lat3D.cpp:	Array<Text> bounds(1,4);
+Lat3D.cpp:Array<Text>
+Lat3D.cpp:Lat3D::CheckBoundaries(Array<LatticeRange*> LatRanges) const {
+LatticeRangeFile.cpp:LatticeRangeFile::LatticeRangeFile(Array <bool> _mask, int _numlayers) {
+Output.cpp:			   Array<int> grads_,
+Output.cpp:			   Array<Text> fileNamesOld_) {
+Output.cpp:	Array<Text> param(1,10);
+Output.cpp:	Array<Text> types(1,7);
+Output.cpp:	Array<Text> types(1,7);
+Output.cpp:	Array<Text> types(1,7);
+Output.cpp:Array<Text>
+Output.cpp:	Array<Text> latname;
+Output.cpp:		Array<Text> lattype(1,4);
+SegmentParam.cpp:	Array<Text> paramTotal = MyInput->GetParameters(ID,name);
+SF_Box.cpp:		  Array<Text> FileNames) {
+SF_Box.cpp:	Array<int> grad(0,4+N_var);
+SF_Box.cpp:		Array<Text> sysNames = MyInput->GetNames("sys");
+SF_Box.cpp:	Array<Text> OutputFileNames(0,0);
+SF_Box.cpp:		Array<Text> firstArguments(1,9);
+SF_Branched1stO.cpp:	Array<Vector> G2Seg(1,numDiffSegments);
+SF_Branched1stO.cpp:	Array<Vector> GBackupSeg(1,numDiffSegments);
+SF_Branched1stO.cpp:	VecArray GzsLink=Gzs[linknum]; // the Gzs matrix of the current link
+SF_Branched1stO.cpp:        //VecArray GzsLink=Gzs[linknum]; // the Gzs matrix of the current link
+SF_Branched1stO.cpp:	VecArray GzsLink=Gzs[linknum]; // the Gzs matrix of the link
+SF_Branched1stO.cpp:	//VecArray GzsLink=Gzs[linknum]; // the Gzs matrix of the link
+SF_Branched1stO.cpp:	/* The matrix Gzs is stored as an Array of VecArrays (typedef for an Array of Vectors)
+SF_Branched1stO.cpp:	Array of Vectors. The array of these matrices is what the full Gzs consists of
+SF_Branched1stO.cpp:	To avoid problems creating an Array of Arrays, we define a type VecArray in the header.
+SF_Copol1stO.cpp:	Array<Vector> G2Seg(1,numDiffSegments);
+SF_Copol1stO.cpp:	Array<Vector> GBackupSeg(1,numDiffSegments);
+SF_Copol1stO.cpp:	Array<Vector> EndPoints(0,numSegWithTwoStates);
+SF_Copol1stO.cpp: 	 	Array<Vector> EndPoints(0,2);
+SF_Copol1stO.cpp: 	Array<Vector> EndPoints(0,N);
+SF_Copol2ndO.cpp:	Array <Text> Pfx = SegQ->GetPfx();
+SF_Copol2ndO.cpp:	Array <Text> Pfy = SegQ->GetPfy();
+SF_Copol2ndO_stiff_range.cpp:	Array <Text> Pfx = SegQ->GetPfx();
+SF_Copol2ndO_stiff_range.cpp:	Array <Text> Pfy = SegQ->GetPfy();
+SF_Homopol2ndO.cpp:	Array<Text> Pfx= SegQ->GetPfx();
+SF_Homopol2ndO.cpp:	Array<Text> Pfy= SegQ->GetPfy();
+SF_LinkNode.cpp:SF_Node::SF_Node(int _n_links, Array<int> _link, Array<int> _seg) {
+SF_Molecule.cpp:	Array<Text> freedoms(1,7);
+SF_Molecule.cpp:	Array<Text> parameters;
+Lat3D.cpp:	Array<Text> bounds(1,4);
+Lat3D.cpp:		Array<Text> lattype(1,4);
+Lat3D.cpp:	Array<Text> bounds(1,4);
+Output.cpp:		Array<Text> lattype(1,4);
+SF_MolSegment.cpp:	Array<Text> freedoms(1,4);
+SF_Segment.cpp:	Array<Text> freedoms(1,4);
+SF_Segment.cpp:		Array<Text> lattype(1,4);
+SF_Solve.cpp:		Array<Text> param(1,44);
+SF_Solve.cpp:		Array<Text> line_method(1,4);
+SF_System.cpp:		Array<Text> functionChoices(1,4);
+SF_System.cpp:	Array<Text> lattype(1,4);
+SF_System.cpp:	Array<Text> lattype(1,4);
+

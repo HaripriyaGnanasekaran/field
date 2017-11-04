@@ -1,0 +1,117 @@
+lat : 3D : latticetype : FCC
+lat : 3D : n_layers_x : 59
+lat : 3D : n_layers_y : 59
+lat : 3D : n_layers_z : 59
+lat : 3D : geometry : flat
+lat : 3D : gradients : 3
+
+mon : C : freedom : free
+mon : Z : freedom : free
+mon : A : freedom : free
+mon : I : freedom : free
+mon: U : freedom : free
+mon : G : freedom : pinned 
+mon : G : pinned_range : =(20,10,10)(30,10,10)(40,10,10)(10,10,20)(20,10,20)(30,10,20)(40,10,20)(50,10,20)(10,10,30)(20,10,30)(40,10,30)(50,10,30)(10,10,40)(20,10,40)(30,10,40)(40,10,40)(50,10,40)(20,10,50)(30,10,50)(40,10,50)(10,20,10)(20,20,10)(30,20,10)(40,20,10)(50,20,10)(10,20,20)(20,20,50)(30,20,50)(40,20,50)(50,20,20)(10,20,30)(20,30,10)(40,30,10)(50,20,30)(10,20,40)(20,30,50)(40,30,50)(50,20,40)(10,20,50)(20,40,10)(30,40,10)(40,40,10)(50,20,50)(10,30,10)(20,40,50)(30,40,50)(40,40,50)(50,30,10)(10,30,20)(20,50,10)(30,50,10)(40,50,10)(50,30,20)(20,50,20)(30,50,20)(40,50,20)(10,30,40)(20,50,30)(40,50,30)(50,30,40)(10,30,50)(20,50,40)(30,50,40)(40,50,40)(50,30,50)(10,40,10)(20,50,50)(30,50,50)(40,50,50)(50,40,10)(10,40,20)(50,40,20)(10,40,30)(50,40,30)(10,40,40)(50,40,40)(10,40,50)(50,40,50)(10,50,20)(50,50,20)(10,50,30)(50,50,30)(10,50,40)(50,50,40)
+
+mon : X : freedom : pinned
+mon : X : pinned_range : 14,14,14;46,46,46
+mon : W : freedom : free
+
+mon : C : chi - G : 0
+mon : C : chi - X : 0
+mon : C : chi - Z : 2
+mon : C : chi - A : 2
+mon : C : chi - I : 4
+mon : C : chi - U : 4
+mon : C : chi - W : 1.6
+//mon : C : chi - P : 0
+
+mon : G : chi - X : 0
+mon : G : chi - Z : 2
+mon : G : chi - A : 2
+mon : G : chi - I : 4
+mon : G : chi - U : 4
+mon : G : chi - W : 1.6
+//mon : G : chi - P : 0
+
+mon : X : chi - Z : 2
+mon : X : chi - A : 2
+mon : X : chi - I : 4
+mon : X : chi - U : 4
+mon : X : chi - W : 1.6
+//mon : X : chi - P : 0
+
+mon : Z : chi - A : 1
+mon : Z : chi - I : 1
+mon : Z : chi - U : 1
+mon : Z : chi - W : 0
+//mon : Z : chi - P : 0
+
+mon : A : chi - I : 1
+mon : A : chi - U : 1
+mon : A : chi - W : 0
+//mon : A : chi - P : -12
+
+mon : I : chi - U : 1
+mon : I : chi - W : 0.5
+//mon : I : chi - P : 0
+
+mon : U : chi - W : 0.5
+//mon : U : chi - P : 0
+
+mol : water : composition : (W)2[(W)1][(W)1](W)1
+mol : water : freedom : solvent
+
+mol : pol : composition :(A)20(X)1[(C)1(I)2(C)2][(C)1(I)2(C)2](C)1[(C)3(I)4(C)2][(C)3(I)4(C)2](C)1[(C)5(I)5(C)2][(C)5(I)5(C)2](C)1[(C)7(U)7(C)2][(C)7(U)7(C)2](G)1[(C)9(U)8(C)2][(C)9(U)8(C)2](C)1[(C)12(U)8(C)5][(C)12(U)8(C)5](Z)30
+
+mol : pol : theta : 19000
+mol : pol : freedom : restricted
+
+output : filenamePol.vtk : type : vtk
+output : filenamePol.vtk : template : vtkPol.tmp
+
+output : filenameA.vtk : type : vtk
+output : filenameA.vtk : template : A.vtk
+
+output : filenameZ.vtk : type : vtk
+output : filenameZ.vtk : template : Z.vtk
+
+output : filenameU.vtk : type : vtk
+output : filenameU.vtk : template : U.vtk
+
+output : filenameI.vtk : type : vtk
+output : filenameI.vtk : template : I.vtk
+
+output : filenameC.vtk : type : vtk
+output : filenameC.vtk : template : C.vtk
+
+
+newton : isaac : method : CG
+newton : isaac : linesearch : CG
+//newton : isaac : m : 7
+newton : isaac : reset_CG : 200
+newton : isaac : deltamax : 0.01
+newton : isaac : tolerance : 1e-6
+newton : isaac : iterationlimit : 1000
+newton : isaac : initial_guess_output_file : virus101.oui
+start
+mon : G : freedom : free
+newton : isaac : initial_guess_output_file : virus102.oui
+start
+mon : X : pinned_range : 15,15,15;45,45,45
+newton : isaac : initial_guess_output_file : virus103.oti
+start
+mon : X : pinned_range : 16,16,16;44,44,44
+newton : isaac : initial_guess_output_file : virus104.oti
+start
+mon : X : pinned_range : 17,17,17;43,43,43
+newton : isaac : initial_guess_output_file : virus105.oti
+start
+mon : X : pinned_range : 18,18,18;42,42,42
+newton : isaac : initial_guess_output_file : virus106.oti
+start
+mon : X : freedom : free
+newton : isaac : initial_guess_output_file : virus106.oti
+
+
+
